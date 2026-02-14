@@ -1,3 +1,6 @@
+🚧 Work in progress
+
+
 # API vs. Interface – Technical Comparison
 
 This mini project demonstrates two integration approaches:
