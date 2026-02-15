@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    container_name: integration_db
+    restart: always
+    environment:
+      POSTGRES_DB: integration_demo
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/init:/docker-entrypoint-initdb.d
+      - pgdata:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    container_name: integration_adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  pgdata:
