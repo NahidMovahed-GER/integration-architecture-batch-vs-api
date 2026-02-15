@@ -13,11 +13,11 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-\## Libraries Used
+## Libraries Used
 
 
 
-\- \*\*pandas\*\*  
+- \*\*pandas\*\*  
 
 &nbsp; Used for data handling and transformation.  
 
@@ -25,7 +25,7 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-\- \*\*sqlalchemy\*\*  
+- \*\*sqlalchemy\*\*  
 
 &nbsp; Provides the database connection layer.  
 
@@ -33,13 +33,13 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-\- \*\*psycopg2-binary\*\*  
+- \*\*psycopg2-binary\*\*  
 
 &nbsp; PostgreSQL driver required by SQLAlchemy to communicate with the database.
 
 
 
-\- \*\*pathlib\*\*  
+- \*\*pathlib\*\*  
 
 &nbsp; Handles file paths in a clean and platform-independent way.
 
@@ -47,21 +47,21 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-\## Technical Stack
+## Technical Stack
 
 
 
-\- PostgreSQL (Database)
+- PostgreSQL (Database)
 
-\- Docker (Containerized environment)
+- Docker (Containerized environment)
 
-\- pandas (Data extraction \& export)
+- pandas (Data extraction \& export)
 
-\- SQLAlchemy (Database connection abstraction layer)
+- SQLAlchemy (Database connection abstraction layer)
 
-\- psycopg2 (PostgreSQL driver)
+- psycopg2 (PostgreSQL driver)
 
-\- pathlib (File system handling)
+- pathlib (File system handling)
 
 
 
