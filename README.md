@@ -15,37 +15,62 @@ Goal: To practically compare architectural and technical differences between int
 
 ## Libraries Used (Simple Explanation)
 
-**pandas**  
+- **pandas**  
 Used for handling data in table format (similar to Excel).  
 Reads data from the database and exports it as a CSV file.
 
-**sqlalchemy**  
+- **sqlalchemy**  
 Database connection layer for Python.  
 Creates and manages the connection to PostgreSQL.
 
-**psycopg2-binary**  
+- **psycopg2-binary**  
 PostgreSQL driver used by SQLAlchemy.  
 Enables communication between Python and the database.
 
-**pathlib**  
+- **pathlib**  
 Used for managing file paths.  
 Ensures the correct folder structure for file storage.
 
 ## Technical Stack
 
+- PostgreSQL  
+  Relational database used to store customer data.
 
+- Docker  
+  Provides an isolated container environment for the database.
 
-- PostgreSQL (Database)
+- pandas  
+  Used for reading SQL data into a DataFrame and exporting it to CSV.
 
-- Docker (Containerized environment)
+- SQLAlchemy  
+  Database abstraction layer for managing the connection.
 
-- pandas (Data extraction \& export)
+- psycopg2  
+  PostgreSQL driver used by SQLAlchemy.
 
-- SQLAlchemy (Database connection abstraction layer)
+- pathlib  
+  Handles file paths and directory structure.
 
-- psycopg2 (PostgreSQL driver)
+## Technical Stack
 
-- pathlib (File system handling)
+- PostgreSQL  
+  Relational database used to store customer data.
+
+- Docker  
+  Provides an isolated container environment for the database.
+
+- pandas  
+  Used for reading SQL data into a DataFrame and exporting it to CSV.
+
+- SQLAlchemy  
+  Database abstraction layer for managing the connection.
+
+- psycopg2  
+  PostgreSQL driver used by SQLAlchemy.
+
+- pathlib  
+  Handles file paths and directory structure.
+
 
 
 
