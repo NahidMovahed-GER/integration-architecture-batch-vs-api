@@ -17,7 +17,7 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-- \*\*pandas\*\*  
+- **pandas**  
 
 &nbsp; Used for data handling and transformation.  
 
@@ -25,7 +25,7 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-- \*\*sqlalchemy\*\*  
+- **sqlalchemy**  
 
 &nbsp; Provides the database connection layer.  
 
@@ -39,7 +39,7 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-- \*\*pathlib\*\*  
+- **pathlib**  
 
 &nbsp; Handles file paths in a clean and platform-independent way.
 
