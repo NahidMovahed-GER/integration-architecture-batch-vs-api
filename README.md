@@ -51,25 +51,14 @@ Ensures the correct folder structure for file storage.
 - pathlib  
   Handles file paths and directory structure.
 
-## Technical Stack
+## How It Works
 
-- PostgreSQL  
-  Relational database used to store customer data.
+1. Docker runs the PostgreSQL database in a container.
+2. SQLAlchemy establishes the database connection.
+3. psycopg2 enables communication with PostgreSQL.
+4. pandas retrieves the data and converts it into a structured table.
+5. The data is exported as a CSV file (file-based batch interface).
 
-- Docker  
-  Provides an isolated container environment for the database.
-
-- pandas  
-  Used for reading SQL data into a DataFrame and exporting it to CSV.
-
-- SQLAlchemy  
-  Database abstraction layer for managing the connection.
-
-- psycopg2  
-  PostgreSQL driver used by SQLAlchemy.
-
-- pathlib  
-  Handles file paths and directory structure.
 
 
 
