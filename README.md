@@ -33,7 +33,7 @@ Goal: To practically compare architectural and technical differences between int
 
 
 
-- \*\*psycopg2-binary\*\*  
+- **psycopg2-binary**  
 
 &nbsp; PostgreSQL driver required by SQLAlchemy to communicate with the database.
 
