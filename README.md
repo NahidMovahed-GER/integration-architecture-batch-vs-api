@@ -1,17 +1,15 @@
 # 🚧 Work in progress
 
-
-
 # API vs. Interface – Technical Comparison
 
-This mini project demonstrates two integration approaches:
+This project demonstrates two integration approaches:
 
 1. File-based batch interface (CSV): Export and import between systems
 2. REST API (HTTP/JSON): Real-time data access
 
 Goal: To practically compare architectural and technical differences between integration patterns.
 
-
+This project simulates a typical enterprise integration scenario.
 
 ## Libraries Used (Simple Explanation)
 
@@ -31,25 +29,7 @@ Enables communication between Python and the database.
 Used for managing file paths.  
 Ensures the correct folder structure for file storage.
 
-## Technical Stack
 
-- PostgreSQL  
-  Relational database used to store customer data.
-
-- Docker  
-  Provides an isolated container environment for the database.
-
-- pandas  
-  Used for reading SQL data into a DataFrame and exporting it to CSV.
-
-- SQLAlchemy  
-  Database abstraction layer for managing the connection.
-
-- psycopg2  
-  PostgreSQL driver used by SQLAlchemy.
-
-- pathlib  
-  Handles file paths and directory structure.
 
 ## How It Works
 
