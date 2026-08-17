@@ -9,6 +9,12 @@ The goal is to show the technical difference between a classic file-based interf
 
 ---
 
+## Architecture Overview
+
+![API vs. Interface – Batch vs. REST Integration](docs/images/api-vs-interface-overview.png)
+
+---
+
 ## Part 1: File-Based Batch Interface
 
 The first part simulates data transfer between two systems using a CSV file.
