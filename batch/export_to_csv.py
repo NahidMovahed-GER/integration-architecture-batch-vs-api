@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from pathlib import Path
 
 # DB URL = connection string (user, password, host, port, database)
-url = "postgresql://demo:demo@localhost:5432/integration_demo"
+url = "postgresql+psycopg://demo:demo@localhost:5433/integration_demo"
 
 # Engine = connection object / driver bridge between Python and PostgreSQL
 engine = create_engine(url)
