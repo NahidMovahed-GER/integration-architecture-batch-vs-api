@@ -75,10 +75,6 @@ integration-architecture-batch-vs-api/
 ├── db/
 │   └── init/
 │
-├── data/
-│   └── outbound/
-│       └── customers_export.csv
-│
 ├── docker-compose.yml
 └── README.md
 ```
