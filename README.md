@@ -1,45 +1,92 @@
-# 🚧 Work in progress
+# 🚧 Work in Progress
 
-# API vs. Interface – Technical Comparison
+## API vs. Interface – Technical Comparison
 
 This project demonstrates two integration approaches:
 
-1. File-based batch interface (CSV): Export and import between systems
-2. REST API (HTTP/JSON): Real-time data access
+* **File-based batch interface (CSV)** – completed ✅
+* **REST API (HTTP/JSON)** – next step 🚧
 
-Goal: To practically compare architectural and technical differences between integration patterns.
+The goal is to practically compare the technical differences between a classic file-based interface and a REST API.
 
-This project simulates a typical enterprise integration scenario.
+---
 
-## Libraries Used (Simple Explanation)
+## Part 1: File-Based Batch Interface
 
-- **pandas**  
-Used for handling data in table format (similar to Excel).  
-Reads data from the database and exports it as a CSV file.
+The first part simulates data transfer between two systems using a CSV file.
 
-- **sqlalchemy**  
-Database connection layer for Python.  
-Creates and manages the connection to PostgreSQL.
+### Process
 
-- **psycopg2-binary**  
-PostgreSQL driver used by SQLAlchemy.  
-Enables communication between Python and the database.
+```text
+PostgreSQL
+    ↓
+export_to_csv.py
+    ↓
+customers_export.csv
+    ↓
+import_from_csv.py
+    ↓
+customers_import
+```
 
-- **pathlib**  
-Used for managing file paths.  
-Ensures the correct folder structure for file storage.
+#### Export (`export_to_csv.py`)
+* Connects to PostgreSQL
+* Reads customer data with SQL
+* Exports the data to a CSV file
+* Stores the file in `data/outbound`
 
+#### Import (`import_from_csv.py`)
+* Reads the exported CSV file
+* Connects to PostgreSQL
+* Imports the data into the target table `customers_import`
 
+> This simulates a simple file-based data exchange between two systems.
 
-## How It Works
+---
 
-1. Docker runs the PostgreSQL database in a container.
-2. SQLAlchemy establishes the database connection.
-3. psycopg2 enables communication with PostgreSQL.
-4. pandas retrieves the data and converts it into a structured table.
-5. The data is exported as a CSV file (file-based batch interface).
+## Technical Stack
 
+* **Python** – application logic
+* **PostgreSQL** – database
+* **Docker** – runs PostgreSQL in a container
+* **pandas** – reads and exports data
+* **SQLAlchemy** – database connection
+* **psycopg** – PostgreSQL driver
+* **pathlib** – file path handling
 
+### Libraries Used
 
+* **pandas**: Reads data from PostgreSQL and handles CSV files.
+* **SQLAlchemy**: Creates the connection between Python and the database.
+* **psycopg**: Enables communication with PostgreSQL.
+* **pathlib**: Handles file and folder paths.
 
+---
 
+## Project Structure
+
+```text
+integration-architecture-batch-vs-api/
+│
+├── batch/
+│   ├── export_to_csv.py
+│   └── import_from_csv.py
+│
+├── db/
+│   └── init/
+│
+├── data/
+│   └── outbound/
+│       └── customers_export.csv
+│
+├── docker-compose.yml
+└── README.md
+```
+
+---
+
+## Next Step
+
+1. The next part of the project will implement a REST API using HTTP/JSON.
+2. After that, both integration approaches will be compared directly:  
+   **Batch/CSV vs. REST API**
